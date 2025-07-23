@@ -16,7 +16,7 @@ const Single :FC<CardProps> = ({title, data}) =>{
         <img src={filter}/>
       </figure>
       </div>
-      <div>
+      <div className="w-full">
         <Card data={data}/>
       </div>
      

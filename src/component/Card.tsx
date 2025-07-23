@@ -24,9 +24,9 @@ const Card: FC<data_type> = ({ data }) => {
         <div  key={index}  className=" h-16.75 w-128.75  mb-2.5">
           {
             activeId === index ? (
-              <div className='h-full w-full border-1 border-(--bd) rounded-xs px-3.75 py-2.5 flex justify-between' onClick={() => setActiveId(index)}>
-                      <div className="w-42 flex gap-5.5">
-                        <figure className="relative  w-18">
+              <div className='h-full w-full border-1 border-(--bd) rounded-xs px-2 py-1.5 sm:px-[2%] sm:py-[1.5%] flex flex-col sm:flex-row justify-between gap-2 sm:gap-0' onClick={() => setActiveId(index)}>
+                      <div className="flex gap-2 sm:gap-3 md:gap-5.5 min-w-0 flex-1">
+                        <figure className="relative w-12 sm:w-16 md:w-18 flex-shrink-0">
                           <img src={item.Images?.PP}></img>
                           <img src={item.Images?.R} className="absolute right-2 bottom-0 z-10"/>
                         </figure>
@@ -62,8 +62,8 @@ const Card: FC<data_type> = ({ data }) => {
               </div>
             ): (
                 <div className='relative h-full w-full ' onClick={() => setActiveId(index)}>
-                  <div className="w-full h-full grid place-items-center  bg-(--bd) " style={{ clipPath: "path('M 0,0 515,0 L 515, 57 L 381,57 L 376,67 L 10, 67 L 0,57 L 0,0  Z')" }} >
-                    <div className="w-[99.3%] h-[97%] bg-(--bg-black) px-3.75 py-2.5 flex justify-between" style={{ clipPath: "path('M 0,0 515,0 L 515, 57 L 381,57 L 376,67 L10,67 L 0,57 L 0,0  Z')" }} >
+                  <div className="w-full h-full grid place-items-center  bg-(--bd) " style={{ clipPath: "path('M 0%,0% 100%,0% L 100%,85.07% L 74.03%,85.07% L 73.01%,100% L 1.94%,100% L 0%,85.07% L 0%,0% Z')" }} >
+                    <div className="w-[99.3%] h-[97%] bg-(--bg-black) px-2 py-1.5 sm:px-[2%] sm:py-[1.5%] flex justify-between" style={{ clipPath: "path('M 0%,0% 100%,0% L 100%,85.07% L 74.03%,85.07% L 73.01%,100% L 1.94%,100% L 0%,85.07% L 0%,0% Z')" }} >
                       <div className="w-42 flex gap-5.5">
                         <figure className="relative  w-18">
                           <img src={item.Images?.PP}></img>

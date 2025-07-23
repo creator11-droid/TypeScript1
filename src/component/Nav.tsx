@@ -28,7 +28,7 @@ const Nav = () => {
   <input
     type='text'
     placeholder='Search for token name or address'
-    className='w:42 md:w-100 lg:w-150 h-8 pl-10 text-(--text-white) pr-4 py-2 border-1 border-(--bd) rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none '
+    className='w-96 h-8 pl-10 text-(--text-white) pr-4 py-2 border-1 border-(--bd) rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none '
   />
   <svg
     xmlns='http://www.w3.org/2000/svg'
