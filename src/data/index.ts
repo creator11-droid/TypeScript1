@@ -17,7 +17,17 @@ export type meme = {
   TotalAmount: number,
   AmountHeld: number,
   Transaction: number,
-  Images: object
+  Images: {
+    x: string,
+      group: string,
+      web:string,
+      PP: string,
+      R:string,
+      Copy: string,
+      Sonar: string,
+      Link: string,
+      Telegram: string
+  }
 
 }
 
