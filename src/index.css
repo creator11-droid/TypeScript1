@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme{
+  --font-Heebo: 'Heebo', 'san-serif';
+  --font-IBM: 'IBM Plex Mono';
+}
+
+body{
+  height: 100%;
+  width:100%;
+  background: #0f0f0f;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+:root{
+  --text-gray: #7e7e7e;
+  --text-white: #f0f0f0;
+  --text-green: #00FF99;
+  --bg-black: #0f0f0f;
+  --bd: #474747;
+}
+
+/* Custom WebKit Scrollbar */
+::-webkit-scrollbar {
+  width: 0.313rem;
+  height: 3.125rem;
+  border-radius: 0.0612rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Tailwind: bg-gray-100 */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #474747; /* Tailwind: bg-gray-500 */
+  border-radius: 0.0613rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--bg-black); /* Tailwind: bg-gray-700 */
+}
