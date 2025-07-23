@@ -4,7 +4,7 @@ import Avatar from "../assets/img/Avatar.png"
 const Nav = () => {
   return (
     <div className='relative'>
-      <div className='flex ml-12 pt-5 pb-5 gap-x-39 font-Heebo'>
+      <div className='flex ml-12 pt-5 pb-5 md:gap-x-20 lg:gap-x-39 font-Heebo'>
         <div className='flex items-center'>
         <figure className='w-8.5 h-4.5'>
            <img src={topdeck} ></img>
@@ -28,7 +28,7 @@ const Nav = () => {
   <input
     type='text'
     placeholder='Search for token name or address'
-    className='w-96 h-8 pl-10 text-(--text-white) pr-4 py-2 border-1 border-(--bd) rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none '
+    className=' w-96 h-8 pl-10 text-(--text-white) pr-4 py-2 border-1 border-(--bd) rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none '
   />
   <svg
     xmlns='http://www.w3.org/2000/svg'

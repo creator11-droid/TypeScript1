@@ -21,7 +21,7 @@ const Card: FC<data_type> = ({ data }) => {
   return (
     <div >
       {data.map((item, index) => (
-        <div  key={index}  className=" h-16.75 w-128.75  mb-2.5">
+        <div  key={index}   className="h-12 sm:h-14 md:h-16 lg:h-16.75 w-full sm:w-80 md:w-96 lg:w-128.75 mb-2 sm:mb-2.5">
           {
             activeId === index ? (
               <div className='h-full w-full border-1 border-(--bd) rounded-xs px-2 py-1.5 sm:px-[2%] sm:py-[1.5%] flex flex-col sm:flex-row justify-between gap-2 sm:gap-0' onClick={() => setActiveId(index)}>
